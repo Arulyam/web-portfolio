@@ -1,0 +1,288 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+/* Variables */
+:root {
+  --navbar-estimate-height: 65px;
+  --text-light: #ecedea;
+  --text-dark: #36454F;
+  --text-theme: green;
+  /* Same as bootstrap bg-dark */
+  --bg-dark1: #21252b;
+  --bg-dark2: #31353b;
+  --bg-light: #ecedea;
+  --bg-theme: #012d01;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Hind Siliguri", sans-serif;
+  height: 100%;
+  overscroll-behavior-x: none;
+  background-color: var(--bg-dark1);
+
+  /* This is the old way of adding padding for proper scroll location. Depreciated after using scroll spy and setting body to position relative. */
+  /* scroll-padding-top: var(--navbar-estimate-height); */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playwrite NZ", cursive;
+}
+
+/* Header */
+header {
+  position: relative;
+  clear: both;
+  background-color: var(--bg-dark2);
+  color: var(--text-light);
+}
+
+.bi {
+  font-size: 25px
+}
+
+.bi-house {
+  color: var(--text-theme);
+  display: inline-block;
+  transition-duration: 0.2s;
+}
+
+.bi-house:hover {
+  color: lightgreen;
+}
+
+.navbar-toggler,
+.bi-house {
+  margin: 0 3vw;
+}
+
+.navbar {
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,.2);
+  transition-duration: 0.2s;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 3vw;
+}
+
+.navbar-nav a {
+  margin-left: auto;
+}
+
+/* Replacement for .fixed-top with additional media functionality */
+.fixed-sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.scroll-top .navbar {
+  box-shadow: none;
+}
+
+#hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/Mountain-View-Natures-Park-cebu-philippines-1500x500.jpg");
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  /* width: 840px; */
+  /* max-height: 30%; */
+  /* padding kept consistent such that text is horizontally centered */
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  color: var(--text-light);
+  text-align: center;
+}
+
+#hero-spacer {
+  height: var(--navbar-estimate-height);
+}
+
+#prof-img {
+  width: clamp(150px, 50%, 300px);
+  padding: 0;
+  margin: auto auto 10px;
+  /* Using --text-theme below */
+  border: rgba(0, 128, 0, 0.3) solid 15px;
+  border-radius: 50%;
+}
+
+#title {
+  font-size: calc(25px + 2.5vw);
+  padding: 5px 0;
+  vertical-align: middle;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+#subtitle {
+  font-size: calc(15px + 0.8vw);
+  padding: 5px 0;
+  vertical-align: middle;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+/* Main */
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  color: var(--text-dark);
+  /* must be same height as the footer */
+  background-color: var(--bg-light);
+}
+
+h3 {
+  font-size: 40px;
+  margin: 20px 0 0;
+}
+
+#mission-section img {
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Potentially can be used to align image heights */
+.img-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* height: clamp(100px, 35%, 300px); */
+}
+
+.dark-section {
+  background-color: var(--bg-dark2);
+  color: var(--text-light);
+}
+
+.theme-section {
+  background-color: var(--bg-theme);
+  color: var(--text-light);
+}
+
+#skills-section img {
+  width: clamp(100px, 35%, 300px);
+  padding-bottom: 20px;
+  object-fit: contain;
+}
+
+#goals-section {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  margin: 20px auto;
+  height: max(30vh, 30vw);
+  max-height: 400px;
+  max-width: 600px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: max(30vh, 30vw);
+  object-position: top;
+  max-height: 400px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption {
+  z-index: 100;
+}
+
+#contact-section a {
+  color: var(--text-dark);
+  transition-duration: 0.2s;
+}
+
+#contact-section a:hover {
+  color: #86959F;
+}
+
+#footer-section {
+  height: 50px;
+  clear: both;
+  /* Covered by Bootstrap */
+  /* background-color: var(--bg-dark); */
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bootstrap Changes */
+.text-light {
+  color: var(--text-light);
+}
+
+main .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Section Targets */
+#mission-target,
+#skills-target,
+#goals-target,
+#contact-target {
+  position: relative;
+  top: -50px;
+}
+
+@media (prefers-reduced-motion) {
+  #hero-section {
+    background-attachment: none;
+  }
+}
+
+@media all and (min-width: 575px) {
+  .fixed-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    margin-bottom: calc(-1*var(--navbar-estimate-height));
+  }
+
+  /********** overscroll-behavior-y FIXED using body background **********/
+  /* Orignally for all screens but now only for medium and up */
+  .scroll-top .navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+}

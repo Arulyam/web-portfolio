@@ -1,0 +1,25 @@
+********* TODO ************
+
+  IMPORTANT
+  - Comment code and continue to comment code as develop to show use of many tools
+  - Fix misaligned skills
+  - Make all text responsive (see vacation website and healthy MealSpot website display class - display-1..6 fs-1..6 etc)
+  - Add better css (!important and/or theme text and backgrounds classes)
+  - Image hover effects & lightbox modals for all images, including carousel (check resources)
+  - Add aria-label tab to all BS icons
+  - Add animate.css as one scrolls down the page
+
+  STYLE
+  - Change d-blocks for different sections if big html changes
+  - Make container fluid changes for different screen size
+  - Consider margins using mt/b-(123456) class (edit: dude there are so many need to read about them but no need to stress)
+  - Add Proper color theme and fonts. Reconsider Section Theme Structure. Consider using Bootstrap Themes or another MDB type library
+  - Round off sections with border radius 
+  - Add animate.css as one scrolls down the page
+  - Create full proper light and dark modes
+  - Do you want a footer that "position sticky to bottom" (Search StackOverFlow in quotes)
+
+  EXTRA
+  - Consider adding more content and useful pages
+  - Eventually have secrets in website such that we can utilize all bootstrap funcitonality
+  A little small floating button in the bottom right corner with a shadow that bounces when hovered over that has a "devicon" of html or repl.it or smthing that when clicked opens new tab for this repl.it page
