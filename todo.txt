@@ -6,8 +6,10 @@
   - Make all text responsive (see vacation website and healthy MealSpot website display class - display-1..6 fs-1..6 etc)
   - Add better css (!important and/or theme text and backgrounds classes)
   - Image hover effects & lightbox modals for all images, including carousel (check resources)
+  - Ensure @media hover css section on images (check Escape Sequence Milestone) 
   - Add aria-label tab to all BS icons
   - Add animate.css as one scrolls down the page
+  - Ensure copyright date is always current year using js Date()
 
   STYLE
   - Change d-blocks for different sections if big html changes
